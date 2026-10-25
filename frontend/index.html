@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NetCheck</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>NetCheck</h1>
+      <p class="sub">Test your connection: latency, jitter, download and upload speed.</p>
+    </header>
+
+    <button id="start">Start test</button>
+    <p id="status">Ready.</p>
+    <div class="bar"><div id="progress"></div></div>
+
+    <section class="cards">
+      <div class="card"><span>Ping</span><strong id="ping">–</strong><small>ms</small></div>
+      <div class="card"><span>Jitter</span><strong id="jitter">–</strong><small>ms</small></div>
+      <div class="card"><span>Download</span><strong id="down">–</strong><small>Mbps</small></div>
+      <div class="card"><span>Upload</span><strong id="up">–</strong><small>Mbps</small></div>
+    </section>
+
+    <p id="verdict"></p>
+    <p id="conn"></p>
+
+    <section class="history">
+      <div class="history-head">
+        <h2>History</h2>
+        <button id="clear" class="link">Clear</button>
+      </div>
+      <canvas id="chart" height="180"></canvas>
+      <p id="empty">No tests yet. Run one to start your history.</p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
