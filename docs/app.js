@@ -1,5 +1,5 @@
 // ===== Settings =====
-const API = "http://127.0.0.1:8000"; // change to your server's https address after deploying
+const API = "https://r-netcheck.duckdns.org";
 const PING_COUNT = 10;     // how many pings to send
 const DOWNLOAD_MB = 5;     // size of each download
 const DOWNLOAD_RUNS = 4;   // first run is a warm-up and is thrown away

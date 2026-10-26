@@ -10,7 +10,7 @@ app = FastAPI(title="NetCheck API")
 # needs permission (CORS) to call this API.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # later: ["https://rawan237.github.io"]
+       allow_origins=["https://rawan237.github.io", "http://localhost:5500"],
     allow_methods=["GET", "POST"],
     allow_headers=["*"],
 )
